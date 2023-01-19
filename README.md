@@ -1,5 +1,3 @@
-# groupedListView_mx9
-
 # Description
 
 This listview shows the liest items grouped, and for each group a group header will be shown.
