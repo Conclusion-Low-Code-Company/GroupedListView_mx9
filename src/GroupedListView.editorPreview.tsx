@@ -1,9 +1,9 @@
 import { ReactElement, createElement } from "react";
-import { HelloWorldSample } from "./components/HelloWorldSample";
-import { GroupedListViewPreviewProps } from "../typings/GroupedListViewProps";
+// import { HelloWorldSample } from "./components/HelloWorldSample";
+// import { GroupedListViewPreviewProps } from "../typings/GroupedListViewProps";
 
-export function preview({ sampleText }: GroupedListViewPreviewProps): ReactElement {
-    return <HelloWorldSample sampleText={sampleText} />;
+export function preview(): ReactElement {
+    return <div>Grouped List View</div>;
 }
 
 export function getPreviewCss(): string {

@@ -3,14 +3,21 @@
  * WARNING: All changes made to this file will be overwritten
  * @author Mendix UI Content Team
  */
-import { CSSProperties } from "react";
+import { ComponentType, CSSProperties, ReactNode } from "react";
+import { ListValue, ListActionValue, ListAttributeValue, ListWidgetValue } from "mendix";
 
 export interface GroupedListViewContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    sampleText: string;
+    inputList: ListValue;
+    groupId: ListAttributeValue<string>;
+    groupTitle?: ListWidgetValue;
+    widget?: ListWidgetValue;
+    emptyMessage?: ReactNode;
+    stickyGroupHeaders: boolean;
+    listItemClick?: ListActionValue;
 }
 
 export interface GroupedListViewPreviewProps {
@@ -22,5 +29,11 @@ export interface GroupedListViewPreviewProps {
     style: string;
     styleObject?: CSSProperties;
     readOnly: boolean;
-    sampleText: string;
+    inputList: {} | { type: string } | null;
+    groupId: string;
+    groupTitle: { widgetCount: number; renderer: ComponentType<{ caption?: string }> };
+    widget: { widgetCount: number; renderer: ComponentType<{ caption?: string }> };
+    emptyMessage: { widgetCount: number; renderer: ComponentType<{ caption?: string }> };
+    stickyGroupHeaders: boolean;
+    listItemClick: {} | null;
 }
