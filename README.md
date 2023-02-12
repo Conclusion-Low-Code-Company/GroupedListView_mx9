@@ -1,20 +1,22 @@
 # Description
 
-This listview shows the list items grouped, and for each group a group header will be redered.
+The list view displays the items in a grouped format, with a group header rendered for each group.
 
 # Typical usage scenario
 
-An alphabetized list of contacts.
++ An alphabetized list of contacts.
++ Rooms grouped per floor.
++ Products grouped per productgroup.
 
 # Features
 
-+ sticky group headers
++ (sticky) group headers
 + custom group header
 + custom empty message
 
 # Dependencies
 
-No other than dependicies for the Mendix Pluggable Widget Generator.
+None.
 
 # Installation
 
@@ -22,7 +24,7 @@ Download the widget into your project from the Mendix Marketplace.
 
 # Configuration
 
-Source for the widget are objects from an entity, with a string attribute as group identifier, sorted at least on the group identifier attribute.
+The source for the widget is a list of objects that have a string attribute serving as a group identifier, and the objects are sorted based on the group identifier attribute at minimum.
 
 # Compatibility
 
