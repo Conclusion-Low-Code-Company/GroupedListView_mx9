@@ -21,11 +21,11 @@
                     <attributeType name="String" />
                 </attributeTypes>
             </property>
-            <property key="groupTitle" type="widgets" required="false" dataSource="inputList">
+            <property key="groupTitle" type="widgets" required="true" dataSource="inputList">
                 <caption>Group title (source is the first object for this group)</caption>
                 <description>Widgets using data source</description>
             </property>
-            <property key="widget" type="widgets" required="false" dataSource="inputList">
+            <property key="widget" type="widgets" required="true" dataSource="inputList">
                 <caption>Content</caption>
                 <description>Widgets using data source</description>
             </property>
